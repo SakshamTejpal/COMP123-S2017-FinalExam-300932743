@@ -9,7 +9,7 @@ using System.Windows.Forms;
  * Date:8/17/17
  * StudentID:300932743
  * Description:Driver Class
- * Version:0.2-Added Feilds and Properties to Scoreboard Class
+ * Version:0.3-Added constructor and methods to Scoreboard Class
  */
 namespace COMP123_S2017_FinalExam_300932743
 {/// <summary>
@@ -17,6 +17,7 @@ namespace COMP123_S2017_FinalExam_300932743
 /// </summary>
     public class Scoreboard
     {
+        
         /// <summary>
         /// Feilds for this class
         /// </summary>
@@ -28,6 +29,8 @@ namespace COMP123_S2017_FinalExam_300932743
         /// <summary>
         /// Properties
         /// </summary>
+        
+           
         public TextBox FinalScoreTextBox
         {
             get
@@ -88,6 +91,26 @@ namespace COMP123_S2017_FinalExam_300932743
                 this._timeTextBox = value;
             }
         }
+        /// <summary>
+        /// Counstructor
+        /// </summary>
+        public Scoreboard(TextBox scoreTextBox, TextBox timeTextBox, TextBox finalScoreTextBox)
+        {
+            scoreTextBox = _scoreTextBox;
+            timeTextBox = _timeTextBox;
+            finalScoreTextBox = _finalScoreTextBox;
+
+        }
+        /// <summary>
+        /// Public methods
+        /// </summary>
+        public void UpdateTime()
+        {
+            this.Time = ((int.Parse(this.TimeTextBox.Text)) - 1);
+            this.TimeTextBox.Text = Convert.ToString(this.Time);
+
+        }
 
     }
+
 }
