@@ -9,7 +9,7 @@ using System.Windows.Forms;
  * Date:8/17/17
  * StudentID:300932743
  * Description:Driver Class
- * Version:0.1-Started Splash first
+ * Version:0.1-Setup SplashForm Timer
  */
 
 namespace COMP123_S2017_FinalExam_300932743
