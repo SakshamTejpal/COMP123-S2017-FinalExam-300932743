@@ -12,7 +12,7 @@ using System.Windows.Forms;
  * Date: 8/17/17
  * StudentID: 300932743
  * Description: Splash Form to show prior to actual application
- * Version: 0.2-Added Timer to Splash Form
+ * Version: 0.4-Designed Splash Form
  */
 
 namespace COMP123_S2017_FinalExam_300932743
