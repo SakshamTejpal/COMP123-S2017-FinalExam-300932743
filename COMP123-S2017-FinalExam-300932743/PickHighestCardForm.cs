@@ -11,11 +11,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 /*
- * Name:
- * Date:
- * StudentID:
- * Description:
- * Version:
+ * Name:Saksham Tejpal
+ * Date:8/17/17
+ * StudentID:300932743
+ * Description:Main Form
+ * Version:0.1-Added Scoreboard private instance
  */
 
 namespace COMP123_S2017_FinalExam_300932743
@@ -29,6 +29,8 @@ namespace COMP123_S2017_FinalExam_300932743
         Deck _deck;
         Hand _hand;
         int _maximumPoints;
+        int _scoreboard;
+       
 
         // PUBLIC PROPERTIES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         public List<PictureBox> DealtCardPictureBoxList
@@ -191,6 +193,7 @@ namespace COMP123_S2017_FinalExam_300932743
         /// </summary>
         private void _reset()
         {
+            
             this._hideCards();
             this._resetDeck();
             CountDownTimer.Enabled = true;
