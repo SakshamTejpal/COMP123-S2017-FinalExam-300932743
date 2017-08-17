@@ -15,7 +15,7 @@ using System.Windows.Forms;
  * Date:8/17/17
  * StudentID:300932743
  * Description:Main Form
- * Version:0.1-Added Scoreboard private instance
+ * Version:0.2-Added Scoreboard private instance
  */
 
 namespace COMP123_S2017_FinalExam_300932743
@@ -30,9 +30,21 @@ namespace COMP123_S2017_FinalExam_300932743
         Hand _hand;
         int _maximumPoints;
         int _scoreboard;
-       
+
 
         // PUBLIC PROPERTIES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        public int ScoreBoard
+        {
+            get
+            {
+                return _scoreboard;
+            }
+            set
+            {
+                _scoreboard = value;
+            }
+
+        }
         public List<PictureBox> DealtCardPictureBoxList
         {
             get
@@ -193,7 +205,8 @@ namespace COMP123_S2017_FinalExam_300932743
         /// </summary>
         private void _reset()
         {
-            
+            Scoreboard.Score = 0;
+            Scoreboard.Time = 30;
             this._hideCards();
             this._resetDeck();
             CountDownTimer.Enabled = true;
