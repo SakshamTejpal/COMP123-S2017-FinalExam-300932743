@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 /*
- * Name:
- * Date:
- * StudentID:
- * Description:
- * Version:
+ * Name:Saksham Tejpal
+ * Date:8/17/17
+ * StudentID:300932743
+ * Description:Driver Class
+ * Version:0.1-Started Splash first
  */
 
 namespace COMP123_S2017_FinalExam_300932743
@@ -24,7 +24,7 @@ namespace COMP123_S2017_FinalExam_300932743
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PickHighestCardForm());
+            Application.Run(new SplashForm());
         }
     }
 }
