@@ -48,7 +48,7 @@
   <ItemGroup>
     <Compile Include="Card.cs" />
     <Compile Include="CardList.cs" />
-    <Compile Include="Class1.cs" />
+    <Compile Include="Scoreboard.cs" />
     <Compile Include="Deck.cs" />
     <Compile Include="Face.cs" />
     <Compile Include="PickHighestCardForm.cs">
